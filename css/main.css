@@ -1,0 +1,77 @@
+/*
+* ===================
+*	Twitter Scraper
+* ===================
+*/
+
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	font-family: 'Ubuntu Mono';
+}
+
+body {
+	background: #FF5F5F;
+	color: white;
+}
+
+#form {
+	padding-top: 5%;
+}
+
+.wrap {
+	text-align: center;
+	padding-top: 10%;
+}
+
+#fade {
+	display: none;
+}
+
+#later {
+	display: none;
+	padding-bottom: 5%;
+}
+
+#tweets {
+	padding-top: 5%;
+}
+
+#null {
+	text-align: left;
+	width: 150px;
+	margin: auto;
+	padding-top: 5%;
+}
+
+#load {
+	text-align: left;
+	width: 150px;
+	margin: auto;
+	padding-top: 5%;
+}
+
+#restart {
+	display: none;
+}
+
+#error {
+	display: none;
+}
+
+#creds {
+	margin: auto;
+	width: 40%;
+	display: none;
+}
+
+.form-control {
+	margin-top: 3%;
+}
+
+h1 {
+  font: 400 48px/1.2 'Merienda One', Helvetica, sans-serif;
+  color: #5A5A5A;
+  text-shadow: 3px 3px 3px #fff;
+}

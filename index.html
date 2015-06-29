@@ -1,0 +1,63 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+		<link href="http://fonts.googleapis.com/css?family=Merienda+One" rel="stylesheet" type="text/css">
+		<link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="./css/main.css">
+		<script src="./js/client.js"></script>
+	</head>
+
+	<body>
+		<div class="container wrap">
+			<h1>Twitter Scraper</h1>
+			<div id="preload" style="font-size: 18px; padding-top: 5%">
+				
+			</div>
+			<div id="load" style="font-size: 18px; padding-top: 5%">
+				<p>loading<span id="loadDots"></span></p>
+			</div>
+
+			<div id="creds">
+				<form id="credsForm">
+					<input id="c_k" class="form-control" type="text" placeholder="consumer_key">
+					<input id="c_s" class="form-control" type="text" placeholder="consumer_secret">
+					<input id="a_t_k" class="form-control" type="text" placeholder="access_token_key">
+					<input id="a_t_s" class="form-control" type="text" placeholder="access_token_secret">
+
+					<button style="margin-top: 5%" type="submit" class="btn btn-default">Submit</button>
+				</form>
+			</div>
+			<div id="error">
+			<p style="font-size: 18px; padding-top: 5%">Error Validating Client {"success": "false"}</p>
+			<button id="newConn" class="btn btn-default">Rety for new connection</button>
+			<button id="newCreds" class="btn btn-default">Enter new API creds</button>
+			</div>
+
+			<div id="fade">
+			<p style="font-size: 18px">Whatever your heart desires, is yours for prosperity</p>
+
+			<form id="form">
+				<div class="form-group" style="text-align: center; display: inline">
+					<input id="key" style="display: inline; width: 100px; margin: auto" type="text" class="form-control" placeholder="keyword">
+				</div>
+				<button type="submit" class="btn btn-default">Submit</button>
+			</form>
+			</div>
+
+			<div id="later" style="text-aign: center">
+				<div id="null">
+					<p style="font-size: 18px">No tweets yet<span id="swagDots">.</span></p>
+				</div>
+				<div id="tweets"></div>
+				<button id="raw" type="submit" class="btn btn-default">Stop Stream & See Raw JSON</button>
+				<br><button id="restart" type="submit" class="btn btn-default">Restart</button>
+			</div>
+		</div>
+		
+	</body>
+</html>
